@@ -1,7 +1,5 @@
-function catGenerator() {
-    let image = document.createElement('img');
-    let cat = document.getElementById('cat-image');
-
-    image.src = "http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
-    cat.appendChild(image);
-}
+document.getElementById('btn').onclick = 
+    function showcats() {
+        document.getElementById('cat-image').innerHTML = 
+            ('<img src="http://edgecats.net/' + Math.random() + '"/>');
+};
